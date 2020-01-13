@@ -27,5 +27,15 @@ class SportsTeam
   end
 
 
-#setters
+  #setters
+
+  #change coach name
+  def change_coach_name(new_coach)
+    @coach= new_coach
+  end
+
+
+
+
+
 end
