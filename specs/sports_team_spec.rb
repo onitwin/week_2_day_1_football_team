@@ -12,24 +12,24 @@ class TestClasses < MiniTest::Test
 
 #test team name is present
   def test_team_name
-    assert_equal("Glasgow Celgers",@football_team.display_team_name)
+    assert_equal("Glasgow Celgers",@football_team.team)
   end
 
 #test team players present
   def test_players_present
-    assert_equal(["Wee Mac","Big John","Sonic T Hedgehog"], @football_team.display_players)
+    assert_equal(["Wee Mac","Big John","Sonic T Hedgehog"], @football_team.players)
   end
 
 #test coach present
   def test_display_coach
-    assert_equal("Barack Obama",@football_team.display_coach)
+    assert_equal("Barack Obama",@football_team.coach)
   end
 
   # test to update coach name
   def test_coach_updated
-    assert_equal("Barack Obama", @football_team.display_coach)
-    @football_team.change_coach_name("Donald Trump")
-    assert_equal("Donald Trump", @football_team.display_coach)
+    assert_equal("Barack Obama", @football_team.coach)
+    @football_team.coach=("Donald Trump") #update to have '=' sign
+    assert_equal("Donald Trump", @football_team.coach)
   end
 
 

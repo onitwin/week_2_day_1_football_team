@@ -1,5 +1,8 @@
 class SportsTeam
 
+  attr_reader :team ,:players, :coach
+  attr_writer :coach
+
 
   def initialize(team_name,players,coach)
     @team=team_name
@@ -12,27 +15,31 @@ class SportsTeam
   #getters
 
   #get team name
-  def display_team_name
-    return @team
-  end
+  #remove to refactor with accessors
+  # def display_team_name
+  #   return @team
+  # end
 
   #get players names
-  def display_players
-    return @players
-  end
+  #remove to refactor with accessors
+  # def display_players
+  #   return @players
+  # end
 
   #get coach name
-  def display_coach
-    return @coach
-  end
+  #remove to refactor with accessors
+  # def display_coach
+  #   return @coach
+  # end
 
 
   #setters
 
   #change coach name
-  def change_coach_name(new_coach)
-    @coach= new_coach
-  end
+  #remove to refactor with accessors
+  # def change_coach_name(new_coach)
+  #   @coach= new_coach
+  # end
 
 
 
